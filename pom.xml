@@ -11,8 +11,8 @@
     <groupId>com.yuanmeng</groupId>
     <artifactId>scaffold-backend</artifactId>
     <version>1.0</version>
-    <name>智能仪表系统</name>
-    <description>智能仪表系统</description>
+    <name>后端脚手架</name>
+    <description>脚手架工程</description>
 
     <properties>
         <java.version>1.8</java.version>
