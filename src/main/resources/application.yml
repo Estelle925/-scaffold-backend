@@ -1,0 +1,50 @@
+spring:
+  application:
+    name: scaffold-backend
+  profiles:
+    active: dev
+  mvc:
+    pathmatch:
+      match:
+        matching-strategy: ant_path_matcher
+    hiddenmethod:
+      filter:
+        enabled: true
+  servlet:
+    multipart:
+      max-file-size: 1000MB
+      max-request-size: 1000MB
+  web:
+    resources:
+      static-locations: file:/D:/项目静态资源/图片/
+
+server:
+  max-http-header-size: 15KB
+  port: 8080
+  tomcat:
+    accesslog:
+      enabled: true
+    max-http-form-post-size: 0
+    threads:
+      max: 2000
+  servlet:
+    context-path: /api
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true #驼峰命名转换
+  global-config:
+    db-config:
+      id-type: auto
+  mapper-locations: classpath:mapper/*.xml
+  type-enums-package: com.yuanmeng.dao.entity.enums
+
+sa-token:
+  active-timeout: -1
+  is-concurrent: true
+  is-log: true
+  is-share: true
+  timeout: 2592000
+  token-name: Token
+  token-style: uuid

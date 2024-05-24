@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: zjym2014
+    url: jdbc:mysql://192.168.110.12:3306/smart-meter-ms?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: remote
+
+
+
+
