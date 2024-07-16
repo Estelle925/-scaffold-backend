@@ -13,14 +13,14 @@ import org.slf4j.LoggerFactory;
  * @author chenhaiming
  * @param <T> 前端返回类型
  */
-public abstract class ApiTemplate<T> {
+public abstract class AbstractApiTemplate<T> {
     /**
      * 业务执行时间默认阀值(10秒)
      */
     public static final long THRESHOLD = 10_000L;
     protected Logger log = LoggerFactory.getLogger(getClass());
 
-    protected ApiTemplate() {
+    protected AbstractApiTemplate() {
 
     }
 

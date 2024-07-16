@@ -23,7 +23,7 @@ public class MybatisPlusConfig {
 
     @Bean
     public MetaObjectHandler metaObjectHandler() {
-        return new DefaultDBFieldHandler();
+        return new DefaultDataBaseFieldHandler();
     }
 
 

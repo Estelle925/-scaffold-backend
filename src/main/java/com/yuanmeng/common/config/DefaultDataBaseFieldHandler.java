@@ -10,7 +10,7 @@ import java.util.Objects;
 /**
  * @author chenhaiming
  */
-public class DefaultDBFieldHandler implements MetaObjectHandler {
+public class DefaultDataBaseFieldHandler implements MetaObjectHandler {
 
     @Override
     public void insertFill(MetaObject metaObject) {
